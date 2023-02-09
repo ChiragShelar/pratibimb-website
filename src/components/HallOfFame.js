@@ -27,9 +27,17 @@ const images2019 = importAll(
   )
 );
 
+const images2022 = importAll(
+  require.context(
+    "../assets/prs/2022",
+    false,
+    /\.(png|jpg|JPG|jpe?g|svg|webp|jfif|gif)$/
+  )
+);
+
 const imagesHallOfFame = importAll(
   require.context(
-    "../assets/prs/halloffame",
+    "../assets/prs/hallOfFame",
     false,
     /\.(png|jpg|JPG|jpe?g|svg|webp|jfif)$/
   )
@@ -38,6 +46,7 @@ const imagesHallOfFame = importAll(
 const imageNames2020 = Object.keys(images2020);
 const imageNames2019 = Object.keys(images2019);
 const imagesNameHallOfFame = Object.keys(imagesHallOfFame);
+const imageNames2022 = Object.keys(images2022);
 
 const CelebCircle = ({ img, name }) => {
   return (
@@ -59,6 +68,27 @@ const HallOfFame = () => {
         subtitle="ALL THE BEAUTIFUL PERSONALITIES WHO HAVE BLESSED PRATIBIMB WITH THEIR PRESENCE"
       ></HeroCommon>
       <div className="hall-of-fame">
+      <div className="glimpses">
+        <h2 data-aos="fade-up">Glimpses of 2022</h2>
+        <Grid
+          container
+          spacing={2}
+          alignItems="center"
+          justifyContent="space-evenly"
+        >
+          {imageNames2022.map((x) => {
+            return (
+              <Grid item key={x} md data-aos="fade-up">
+                <CelebCircle
+                  img={images2022[x]["default"]}
+                  name={x.split(".")[0].replace(/_/g, " ")}
+                />
+              </Grid>
+            );
+          })}
+        </Grid>
+      </div>
+
         <div className="glimpses">
           <h2 data-aos="fade-up">Glimpses of 2020</h2>
           <Grid

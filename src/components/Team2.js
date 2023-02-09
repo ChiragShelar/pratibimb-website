@@ -9,22 +9,27 @@ import MemberCard from "./MemberCard";
 import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-import NISHTHA_SAINGER from "../assets/Team/NISHTHA_SAINGER.webp";
-import TANISHKA_LALE from "../assets/Team/TANISHKA_LALE.webp";
-import MANASHVI_SINGH from "../assets/Team/MANASHVI_SINGH.webp";
-import SAHIL_DALVI from "../assets/Team/SAHIL_DALVI.webp";
-import CHAITRAVI_CHALKE from "../assets/Team/CHAITRAVI_CHALKE.webp";
-import DARSH_BAVISHI from "../assets/Team/DARSH_BAVISHI.webp";
-import KSHITIJ_GAIKWAD from "../assets/Team/KSHITIJ_GAIKWAD.webp";
-import TEJAS_BHANDARI from "../assets/Team/TEJAS_BHANDARI.webp";
-import GAYATRI_VERNEKAR from "../assets/Team/GAYATRI_VERNEKAR.webp";
-import DIVIJA_JHA from "../assets/Team/DIVIJA_JHA.webp";
-import JOY_PUROHIT from "../assets/Team/JOY_PUROHIT.webp";
-import AAYUSHI_JOSHI from "../assets/Team/AAYUSHI_JOSHI.webp";
-import AKANKSHA_JADHAV from "../assets/Team/AKANKSHA_JADHAV.webp";
-import AAYUSH_SHAH from "../assets/Team/AAYUSH_SHAH.webp";
-import SHIVAM_PALIWAL from "../assets/Team/SHIVAM_PALIWAL.webp";
-import MAYURI_VAKTE from "../assets/Team/MAYURI_VAKTE.webp";
+import SUYASH from "../assets/Team/Suyash1.jpeg";
+import ARNAV_ZUTSHI from "../assets/Team/ARNAV_ZUTSHI.jpg";
+import MISHA_AZMI from "../assets/Team/MISHA_AZMI.jpg";
+import DIVEN_SIRWANI from "../assets/Team/DIVEN_SIRWANI.jpeg";
+import ROSHIT_DAHAT from "../assets/Team/ROSHIT_DAHAT.jpg";
+import ARODA from "../assets/Team/ARODA.jpg";
+import SANIA_SHAIKH from "../assets/Team/SANIA_SHAIKH.jpg";
+import FARDEEN_KHAN from "../assets/Team/FAWDEEN_KHAN.jpg";
+import UTKARSHA_TARMALE from "../assets/Team/UTKARSHA_TARMALE.jpg";
+import SHEENA_DMELLO from "../assets/Team/SHEENA_DMELLO.jpg";
+import OM_CHAJED from "../assets/Team/OM_CHAJED.jpg";
+import RICHA_DESHPANDE from "../assets/Team/RICHA_DESHPANDE.webp";
+import PRIYANKA_REDDY from "../assets/Team/PRIYANKA_REDDY.jpeg";
+import SAEE_AMRUTKAR from "../assets/Team/SAEE_AMRUTKAR.jpeg";
+import PRATHAMEYA_WALIMBE from "../assets/Team/PRATHAMEYA_WALIMBE.jpg";
+import MOHIT_MAHNORI from "../assets/Team/MOHIT_MAHNORI.jpg";
+import PRANAV_NAYAK from "../assets/Team/PRANAV_NAYAK.jpeg";
+import HARSHAL_UBALE from "../assets/Team/HARSHAL_UBALE.jpg";
+import JASH_BHATIA from "../assets/Team/JASH_BHATIA.jpeg";
+import RUCHIT_SHAH from "../assets/Team/RUCHIT_SHAH.jpg";
+import TANVI_BOTE from "../assets/Team/TANVI_BOTE.jpeg";
 
 const useTabStyles = makeStyles({
   root: {
@@ -71,7 +76,7 @@ export default function Team2() {
   };
 
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "0 auto" }} data-aos="fade-up">
+    <Box sx={{ maxWidth: "1500px", margin: "0 auto" }} data-aos="fade-up">
       <Tabs
         classes={{ root: classes.root, scroller: classes.scroller }}
         value={value}
@@ -100,34 +105,42 @@ export default function Team2() {
           >
             <Grid item md>
               <MemberCard
-                color="blue"
-                name="Nishtha Sainger"
-                img={NISHTHA_SAINGER}
+                color="purple"
+                name="Utkarsha Tarmale"
+                img={UTKARSHA_TARMALE}
+                post="Marketing Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Sania Shaikh"
+                img={SANIA_SHAIKH}
+                post="Marketing Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Fardeen Khan"
+                img={FARDEEN_KHAN}
                 post="Marketing Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Tanishka Lale"
-                img={TANISHKA_LALE}
-                post="Marketing Head"
+                name="Om Chajed"
+                img={OM_CHAJED}
+                post="Marketing Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Manashvi Singh"
-                img={MANASHVI_SINGH}
-                post="Chief Marketing Officer"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                color="blue"
-                name="Sahil Dalvi"
-                img={SAHIL_DALVI}
-                post="Chief Marketing Officer"
+                name="Sheena Dmello"
+                img={SHEENA_DMELLO}
+                post="Marketing Coordinator"
               />
             </Grid>
           </Grid>
@@ -142,25 +155,33 @@ export default function Team2() {
             <Grid item md>
               <MemberCard
                 color="purple"
-                name="Gayatri Vernekar"
-                img={GAYATRI_VERNEKAR}
+                name="Prathameya Walimbe"
+                img={PRATHAMEYA_WALIMBE}
                 post="Public Relations Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="purple"
-                name="Divija Jha"
-                img={DIVIJA_JHA}
+                name="Saee Amrutkar"
+                img={SAEE_AMRUTKAR}
                 post="Public Relations Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
-                color="purple"
-                name="Joy Purohit"
-                img={JOY_PUROHIT}
-                post="Chief PR Officer"
+                color="blue"
+                name="Richa Deshpande"
+                img={RICHA_DESHPANDE}
+                post="Public Relations Coordinator"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="blue"
+                name="Priyanka Reddy"
+                img={PRIYANKA_REDDY}
+                post="Public Relations Coordinator"
               />
             </Grid>
           </Grid>
@@ -174,42 +195,50 @@ export default function Team2() {
           >
             <Grid item md>
               <MemberCard
-                color="green"
-                name="Aayushi Joshi"
-                img={AAYUSHI_JOSHI}
+                color="purple"
+                name="Jash Bhatia"
+                img={JASH_BHATIA}
+                post="Sponsorship Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Ruchit Shah"
+                img={RUCHIT_SHAH}
+                post="Sponsorship Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Tanvi Bote"
+                img={TANVI_BOTE}
                 post="Sponsorship Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="green"
-                name="Shivam Paliwal"
-                img={SHIVAM_PALIWAL}
-                post="Sponsorship Head"
+                name="Pranav Nayak"
+                img={PRANAV_NAYAK}
+                post="Sponsorship Coordinator"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Harshal Ubale"
+                img={HARSHAL_UBALE}
+                post="Sponsorship Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="green"
-                name="Akanksha Jadhav"
-                img={AKANKSHA_JADHAV}
-                post="Sponsorship Head"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                color="green"
-                name="Aayush Shah"
-                img={AAYUSH_SHAH}
-                post="Sponsorship Head"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                color="green"
-                name="Mayuri Vakte"
-                img={MAYURI_VAKTE}
-                post="Chief Sponsorship Officer"
+                name="Mohit Mahnori"
+                img={MOHIT_MAHNORI}
+                post="Sponsorship Coordinator"
               />
             </Grid>
           </Grid>
@@ -223,34 +252,50 @@ export default function Team2() {
           >
             <Grid item md>
               <MemberCard
-                color="blue"
-                name="Darsh Bavishi"
-                img={DARSH_BAVISHI}
+                color="purple"
+                name="Suyash Dammani"
+                img={SUYASH}
+                post="Execution Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Soumya Arora"
+                img={ARODA}
+                post="Execution Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Roshit Dahat"
+                img={ROSHIT_DAHAT}
                 post="Execution Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Chaitravi Chalke"
-                img={CHAITRAVI_CHALKE}
-                post="Execution Head"
+                name="Arnav Zutshi"
+                img={ARNAV_ZUTSHI}
+                post="Execution Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Kshitij Gaikwad"
-                img={KSHITIJ_GAIKWAD}
-                post="Execution Head"
+                name="Diven Sirwani"
+                img={DIVEN_SIRWANI}
+                post="Execution Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Tejas Bhandari"
-                img={TEJAS_BHANDARI}
-                post="Chief Execution Officer"
+                name="Misha Azmi"
+                img={MISHA_AZMI}
+                post="Execution Coordinator"
               />
             </Grid>
           </Grid>

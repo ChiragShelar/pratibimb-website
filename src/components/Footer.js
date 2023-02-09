@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import { Grid, Box, Link } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +11,12 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
+  const { pathname } = useLocation();
+
+  if (pathname === "/signout") {
+    return null;
+  }
+
   return (
     <div className="footer">
       <div style={{ maxWidth: "1300px", margin: "auto" }}>
@@ -17,6 +24,24 @@ const Footer = () => {
           <Grid item xs={12} sm={12} md={4}>
             <div className="footer-prati">
               <h3>PRATIBIMB VJTI</h3>
+              <br />
+              <p>
+                Website Contributed By<br></br>
+                <a
+                  href="https://communityofcoders.in/"
+                  target="_blank"
+                  rel="noreferrer"
+                  style={{
+                    textDecoration: "none",
+                    color: "green",
+                    fontSize: "1.1rem",
+                    fontWeight: "strong",
+                  }}
+                >
+                  Community of Coders, VJTI
+                </a>{" "}
+                💚
+              </p>
               <br />
               <Box
                 className="social-icons"

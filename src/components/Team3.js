@@ -9,16 +9,22 @@ import MemberCard from "./MemberCard";
 import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-import SHREYAS_HEGDE from "../assets/Team/SHREYAS_HEGDE.webp";
-import MANALI_SASNUR from "../assets/Team/MANALI_SASNUR.webp";
-import SAKHSI_SHIRUDE from "../assets/Team/SAKSHI_SHIRUDE.webp";
-import BHUVAN_SARDA from "../assets/Team/BHUVAN_SARDA.webp";
-import VEDANTI_KSHIRSAGAR from "../assets/Team/VEDANTI_KSHIRSAGAR.webp";
-import PRIYANKA_AVHAD from "../assets/Team/PRIYANKA_AVHAD.jpeg";
-import ASAVARI_AMBAVANE from "../assets/Team/ASAVARI_AMBAVANE.webp";
-import SAMEEP_SHERKAR from "../assets/Team/SAMEEP_SHERKAR.webp";
-import SURYAJEET_BHOSALE from "../assets/Team/SURYAJEET_BHOSALE.webp";
-import SHREYA_PUNJABI from "../assets/Team/SHREYA_PUNJABI.jpg";
+import SANCHIT_PATIL from "../assets/Team/SANCHIT_PATIL.jpg";
+import ATHARVA_BANDARKAR from "../assets/Team/ATHARVA_BANDARKAR.jpeg";
+import PREM_NAGPURE from "../assets/Team/PREM_NAGPURE.jpg";
+import YASHITA_NEGI from "../assets/Team/YASHITA_NEGI.jpg";
+import VIBHU_SHUKLA from "../assets/Team/VIBHU_SHUKLA.jpg";
+import NISHTHA_PANDEY from "../assets/Team/NISHTHA_PANDEY.jpg";
+import KEISHA_GUPTA from "../assets/Team/KEISHA_GUPTA.jpeg";
+import RUSHAB_RAYALAWAR from "../assets/Team/RUSHAB_RAYALAWAR.jpg";
+import RUSHIL_SHIVADE from "../assets/Team/RUSHIL_SHIVADE.jpg";
+import KANAK_MESHRAM from "../assets/Team/KANAK_MESHRAM.jpg";
+import BHAKTI_SHRAWAK from "../assets/Team/BHAKTI_SHRAWAK.jpg";
+import TANIA_SHARMA from "../assets/Team/TANIA_SHARMA.jpg";
+import ADITI_JADHAV from "../assets/Team/ADITI_JADHAV.jpg";
+import ARYA_DHUMANE from "../assets/Team/ARYA_DHUMANE.jpeg";
+import BALKRISHNA_GAWDE from "../assets/Team/BALKRISHNA_GAWDE.jpg";
+import AADYA_NAVALKAR from "../assets/Team/AADYA_NAVALKAR.jpeg";
 
 const useTabStyles = makeStyles({
   root: {
@@ -65,7 +71,7 @@ export default function Team3() {
   };
 
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "0 auto" }} data-aos="fade-up">
+    <Box sx={{ maxWidth: "1500px", margin: "0 auto" }} data-aos="fade-up">
       <Tabs
         classes={{ root: classes.root, scroller: classes.scroller }}
         value={value}
@@ -75,9 +81,10 @@ export default function Team3() {
         variant={"scrollable"}
         scrollButtons={true}
       >
-        <Tab label="Design and art" {...a11yProps(0)} />
+        <Tab label="Design" {...a11yProps(0)} />
         <Tab label="Illuminati Co-ordinators" {...a11yProps(1)} />
         <Tab label="Performing Arts" {...a11yProps(2)} />
+        <Tab label="Digital" {...a11yProps(2)} />
       </Tabs>
       <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -94,25 +101,25 @@ export default function Team3() {
             <Grid item md>
               <MemberCard
                 color="purple"
-                name="Shreyas Hegde"
-                img={SHREYAS_HEGDE}
+                name="Arya Dhumane"
+                img={ARYA_DHUMANE}
                 post="Design Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="purple"
-                name="Manali Sasnur"
-                img={MANALI_SASNUR}
-                post="Fine Arts Head"
+                name="Aditi Jadhav"
+                img={ADITI_JADHAV}
+                post="Design Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="purple"
-                name="Shreya Punjabi"
-                img={SHREYA_PUNJABI}
-                post="Creative Head"
+                name="Balkrishna Gawde"
+                img={BALKRISHNA_GAWDE}
+                post="Design Coordinator"
               />
             </Grid>
           </Grid>
@@ -126,25 +133,33 @@ export default function Team3() {
           >
             <Grid item md>
               <MemberCard
-                img={SAMEEP_SHERKAR}
+                img={RUSHIL_SHIVADE}
                 post="Illuminati Co-ordinator"
-                name="Sameep Sherkar"
+                name="Rushil Shivade"
                 color="blue"
               />
             </Grid>
             <Grid item md>
               <MemberCard
-                img={ASAVARI_AMBAVANE}
+                img={KANAK_MESHRAM}
                 post="Illuminati Co-ordinator"
-                name="Asavari Ambavane"
+                name="Kanak Meshram"
                 color="blue"
               />
             </Grid>
             <Grid item md>
               <MemberCard
-                img={SURYAJEET_BHOSALE}
+                img={TANIA_SHARMA}
                 post="Illuminati Co-ordinator"
-                name="Suryajeet Bhosale"
+                name="Tania Sharma"
+                color="blue"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={BHAKTI_SHRAWAK}
+                post="Illuminati Co-ordinator"
+                name="Bhakti Shrawak"
                 color="blue"
               />
             </Grid>
@@ -159,39 +174,87 @@ export default function Team3() {
           >
             <Grid item md>
               <MemberCard
-                color="blue"
-                name="Sakshi Shirude"
-                img={SAKHSI_SHIRUDE}
+                color="purple"
+                name="Aadya Navalkar"
+                img={AADYA_NAVALKAR}
+                post="Performing Arts Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Vibhu Shukla"
+                img={VIBHU_SHUKLA}
+                post="Performing Arts Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="purple"
+                name="Yashita Negi"
+                img={YASHITA_NEGI}
                 post="Performing Arts Head"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Bhuvan Sarda"
-                img={BHUVAN_SARDA}
-                post="Performing Arts Head"
+                name="Nishtha Pandey"
+                img={NISHTHA_PANDEY}
+                post="Performing Arts Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Vedanti Kshirsagar"
-                img={VEDANTI_KSHIRSAGAR}
-                post="Chief PA Officer"
+                name="Keisha Gupta"
+                img={KEISHA_GUPTA}
+                post="Performing Arts Coordinator"
               />
             </Grid>
             <Grid item md>
               <MemberCard
                 color="blue"
-                name="Priyanka Avhad"
-                img={PRIYANKA_AVHAD}
-                post="Chief PA Officer"
+                name="Rushab Rayalwar"
+                img={RUSHAB_RAYALAWAR}
+                post="Performing Arts Coordinator"
               />
             </Grid>
           </Grid>
         </TabPanel>
-        
+        <TabPanel value={value} index={3} dir={theme.direction}>
+          <Grid
+            container
+            spacing={2}
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Grid item md>
+              <MemberCard
+                color="blue"
+                name="Prem Nagpure"
+                img={PREM_NAGPURE}
+                post="Digital Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="blue"
+                name="Atharva Bandarkar"
+                img={ATHARVA_BANDARKAR}
+                post="Digital Head"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                color="blue"
+                name="Sanchit Patil"
+                img={SANCHIT_PATIL}
+                post="Digital Head"
+              />
+            </Grid>
+          </Grid>
+        </TabPanel>
       </SwipeableViews>
     </Box>
   );

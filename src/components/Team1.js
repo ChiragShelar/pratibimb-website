@@ -9,10 +9,12 @@ import MemberCard from "./MemberCard";
 import { Grid } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 
-import MITI_SHAH from "../assets/Team/MITI_SHAH.webp";
-import MEHAK_SATI from "../assets/Team/MEHAK_SATI.webp";
-import YASH_SINHA from "../assets/Team/YASH_SINHA.webp";
-import CHINMAY_CHOPDA from "../assets/Team/CHINMAY_CHOPDA.webp";
+import ADITYA_MHATRE from "../assets/Team/ADITYA_MHATRE.jpg";
+import SAHIL_THAKKAR from "../assets/Team/SAHIL_THAKKAR.jpeg";
+import RADHA_NAYSE from "../assets/Team/RADHA_NAYSE.jpg";
+import ANANDITA_BUMMERKAR from "../assets/Team/ANANDITA_BUMMERKAR.jpg";
+import NANDINI_BHOSALE from "../assets/Team/NANDINI_BHOSLE.jpg";
+import MIHIR_GHANEKAR from "../assets/Team/MIHIR_GHANEKAR.JPG";
 
 const useTabStyles = makeStyles({
   root: {
@@ -69,8 +71,7 @@ export default function Team1() {
         variant={"scrollable"}
         scrollButtons={true}
       >
-        <Tab label="Secretaries" {...a11yProps(0)} />
-        <Tab label="Treasurer" {...a11yProps(1)} />
+        <Tab label="Secretaries & Treasurers" {...a11yProps(0)} />
       </Tabs>
       <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
@@ -86,45 +87,53 @@ export default function Team1() {
           >
             <Grid item md>
               <MemberCard
-                img={MEHAK_SATI}
+                img={NANDINI_BHOSALE}
                 post="Secretary"
-                name="Mehak Sati"
-                color="green"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                img={YASH_SINHA}
-                post="Secretary"
-                name="Yash Sinha"
-                color="green"
-              />
-            </Grid>
-            <Grid item md>
-              <MemberCard
-                img={MITI_SHAH}
-                post="Secretary"
-                name="Miti Shah"
-                color="green"
-              />
-            </Grid>
-          </Grid>
-        </TabPanel>
-        <TabPanel value={value} index={1} dir={theme.direction}>
-          <Grid
-            container
-            spacing={2}
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Grid item md>
-              <MemberCard
-                img={CHINMAY_CHOPDA}
-                post="Treasurer"
-                name="Chinmay Chopda"
+                name="Nandini Bhosale"
                 color="purple"
               />
             </Grid>
+            <Grid item md>
+              <MemberCard
+                img={MIHIR_GHANEKAR}
+                post="Secretary"
+                name="Mihir Ghanekar"
+                color="purple"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={ANANDITA_BUMMERKAR}
+                post="Secretary"
+                name="Anandita Bummerkar"
+                color="purple"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={SAHIL_THAKKAR}
+                post="Treasurer"
+                name="Sahil Thakkar"
+                color="green"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={RADHA_NAYSE}
+                post="Treasurer"
+                name="Radha Nayse"
+                color="green"
+              />
+            </Grid>
+            <Grid item md>
+              <MemberCard
+                img={ADITYA_MHATRE}
+                post="Treasurer"
+                name="Aditya Mhatre"
+                color="green"
+              />
+            </Grid>
+
           </Grid>
         </TabPanel>
       </SwipeableViews>

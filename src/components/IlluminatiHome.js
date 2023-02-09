@@ -12,8 +12,8 @@ const IlluminatiHome = () => {
             <Grid item xs={12} sm={12} md={6} data-aos="fade-up">
               <iframe
                 width="100%"
-                height="400"
-                src="https://www.youtube.com/embed/ng-6OGP3l5s"
+                height="385"
+                src="https://www.youtube.com/embed/okWim4YxRms"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -35,8 +35,8 @@ const IlluminatiHome = () => {
                   students zealously participate in all these events to bag
                   points for their branch and the branch with the most points at
                   the end of the 4 day cultural festival wins the prestigious
-                  Illuminati Cup. This years theme for Illuminati is 'Through a
-                  Pixelated Glass.' To know more about it, join us on this
+                  Illuminati Cup. This years theme for Illuminati is 'Turn it into
+                  Art.' To know more about it, join us on this
                   crazy, fun and exciting journey and explore this magical world
                   which is Illuminati.
                 </p>

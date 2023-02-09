@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Box, Link, IconButton, Drawer } from "@mui/material";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -7,6 +8,7 @@ import logo from "../assets/prati-white.png";
 
 const Navbar = () => {
   const navchange = useMediaQuery("(min-width:1300px)");
+  const user = localStorage.getItem("user");
 
   const Navlinks = ({ fd }) => {
     return (
@@ -47,6 +49,19 @@ const Navbar = () => {
               <p>Gallery</p>
             </Link>
           </Box>
+          {user ? (
+            <Box p={3}>
+              <Link underline="none" href="/signout" color="inherit">
+                <p>Sign Out</p>
+              </Link>
+            </Box>
+          ) : (
+            <Box p={3}>
+              <Link underline="none" href="/login" color="inherit">
+                <p>Login</p>
+              </Link>
+            </Box>
+          )}
         </Box>
       </div>
     );

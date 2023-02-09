@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import fire from "../fire";
-import { collection, getDocs } from "firebase/firestore/lite";
+import { fire } from "../firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
 
 const UpcomingEvents = () => {
   const [info, setInfo] = useState([]);
@@ -37,37 +37,31 @@ const UpcomingEvents = () => {
       <h1>Upcoming Events</h1>
       <table className="events-list">
         <tbody>
-          {info
-            .map((x) => {
-              return (
-                <tr key={x.name}>
-                  <td>
-                    <div className="event-date">
-                      <div className="event-day">
-                        {x.time.toDate().getDate()}
-                      </div>
-                      <div
-                        className="event-month"
-                        style={{ textTransform: "uppercase" }}
-                      >
-                        {months[x.time.toDate().getMonth()]}
-                      </div>
+          {info.map((x) => {
+            return (
+              <tr key={x.name}>
+                <td>
+                  <div className="event-date">
+                    <div className="event-day">{x.time.toDate().getDate()}</div>
+                    <div
+                      className="event-month"
+                      style={{ textTransform: "uppercase" }}
+                    >
+                      {months[x.time.toDate().getMonth()]}
                     </div>
-                  </td>
-                  <td>{x.name}</td>
-                  <td>
-                    {x.link === "" ? null : (
-                      <a
-                        href={x.link}
-                        className="btn btn-grey btn-sm event-more"
-                      >
-                        Join
-                      </a>
-                    )}
-                  </td>
-                </tr>
-              );
-            })}
+                  </div>
+                </td>
+                <td>{x.name}</td>
+                <td>
+                  {x.link === "" ? null : (
+                    <a href={x.link} className="btn btn-grey btn-sm event-more">
+                      Join
+                    </a>
+                  )}
+                </td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
